@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Persia.NET" Version="3.0.4727" />
+    <PackageReference Include="System.Globalization.Calendars" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PersianTools\PersianTools.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Persia">
+      <HintPath>..\..\..\..\Documents\next.ihotel-api\Infrastructure\Persia.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
